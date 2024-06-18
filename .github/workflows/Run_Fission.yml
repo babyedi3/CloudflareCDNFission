@@ -72,6 +72,6 @@ jobs:
         git config --local user.email "action@github.com"
         git config --local user.name "GitHub Action"
         git add Fission_ip.txt Fission_cf.txt Fission_domain.txt Fission_ip2cc.txt
-        git commit -m "Processed files on $(date "+%Y/%m/%d %H:%M:%S")"
+        git commit -m "🚀 Updated - $(TZ='Asia/Shanghai' date "+%Y/%m/%d %H:%M:%S")"
         git remote set-url origin https://x-access-token:${{ secrets.GITHUB_TOKEN }}@github.com/${{github.repository}}.git
         git push
